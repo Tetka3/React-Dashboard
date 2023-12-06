@@ -1,32 +1,32 @@
 import "./widget.scss";
 import { NavLink } from "react-router-dom";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 
-const Widget = () => {  
+const WidgetOrder = () => {  
 
   return (
     <div className="widget">
       <div className="left">
-        <span className="title">USERS</span>
-        <span className="counter">80</span>
-        <NavLink to="/users" className="link">See all users</NavLink>
+        <span className="title">ORDERS</span>
+        <span className="counter">20</span>
+        <NavLink to="/orders" className="link">View current orders</NavLink>
       </div>
       <div className="right">
         <div className="percentage positive">
           <KeyboardArrowUpIcon />
           20 %
         </div>
-        <PersonOutlinedIcon
+        <ShoppingCartOutlinedIcon
             className="icon"
             style={{
-              color: "crimson",
-              backgroundColor: "rgba(255, 0, 0, 0.2)",
+              backgroundColor: "rgba(218, 165, 32, 0.2)",
+              color: "goldenrod",
             }}/>
       </div>
     </div>
   );
 };
 
-export default Widget;
+export default WidgetOrder;
